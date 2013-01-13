@@ -2,8 +2,9 @@
 
 require 'vendor/autoload.php';
 
-$i = 0;
+echo "nb,memory,memoryPeak\n";
 
+$i = 0;
 $app = function ($request, $response) use(&$i) {
     $response->writeHead(200, array('Content-Type' => 'text/plain'));
 
