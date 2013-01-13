@@ -16,7 +16,7 @@ $app = function ($request, $response) use(&$i) {
 
     if (0 == $i % 100) {
         // echo sprintf("[%5.0f] Mem(c): %4.3fMb, Mem(p): %4.3fMb\n", $i, memory_get_usage()/(1024*1024), memory_get_peak_usage()/(1024*1024));
-        echo sprintf("%s;%4.3f;%4.3f;\n", $i, memory_get_usage()/(1024*1024), memory_get_peak_usage()/(1024*1024));
+        echo sprintf("%s,%4.3f,%4.3f\n", $i, memory_get_usage()/(1024*1024), memory_get_peak_usage()/(1024*1024));
     }
     $i++;
 };
