@@ -9,6 +9,5 @@
     ],
     "require": {
         "react/http": "dev-master"
-
     }
 }
